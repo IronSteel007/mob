@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    width: 200px;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.nav_links1 {
+    padding: 5px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bread_crumbs li+li:before {
+    padding: 2px;
+    color: rgb(230, 31, 31);
+    content: "/\00a0";
+}
+
+.menu_link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu_link:hover {
+    text-decoration: underline;
+}
+
+.product_item {
+    margin: 5px;
+}
+
+.bread_crumbs {
+    display: flex;
+    list-style: none;
+}
+
+.breadcrumbs-item {
+    padding-left: 0;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.breadcrumbs_link {
+    text-decoration: none;
+    color: #333;
+}
+
+.card {
+    border: solid #333 2px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.rpp_card {
+    background-color: #ffffff;
+}
+
+.save_card {
+    foreground color: #28b328;
+    background-color: #ffffff;
+}
+
+.products_container {
+    margin: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        margin-left: 2.5%;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .logo {
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
+    .menu_item {
+        margin: 10px;
+    }
+    .card_text {
+        margin: 0px;
+    }
+    .video_title {
+        margin: 0px;
+    }
+    .rpp_card {
+        margin: 0px;
+    }
+    .price_card {
+        margin: 0px;
+    }
+    .save_card {
+        margin: 0px;
+    }
+    .product_item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .breadcrumbs {
+        justify-content: space-between;
+        display: flex
+    }
+    .breadcrumbs-item {
+        padding-left: 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .text_product {
+        display: block;
+    }
+    .card_img {
+        height: 50%;
+        width: 100%;
+    }
+    .card_img img {
+        height: 100%;
+        width: 100%;
+    }
+    .card {
+        flex: 2;
+        height: 450px;
+    }
+    .text_product {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 05px;
+        margin: auto;
+    }
+    p {
+        text-align: left;
+    }
+}
